@@ -1,4 +1,5 @@
 # PR_Description
+Here, we create a Git Action to generate the PR description based on the differences between the current and main branches.
+The description is generated dynamically from recent changes.
 
-Here, we create the Git Action to generate the PR description based on the current and main branch.
-I will generate the description based on changes.
+The description messages are created by AI, so please review them carefully for any errors.

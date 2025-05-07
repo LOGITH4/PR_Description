@@ -3,3 +3,5 @@ Here, we create a Git Action to generate the PR description based on the differe
 The description is generated dynamically from recent changes.
 
 The description messages are created by AI, so please review them carefully for any errors.
+
+If you find the error, please create the issue.

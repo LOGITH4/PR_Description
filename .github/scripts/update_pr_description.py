@@ -64,6 +64,7 @@ def generate_description(diff):
         "temperature": 0.7,
         "max_tokens": 700
     }
+    print("Headers: ", HEADERS)
     response = requests.post(AZURE_API_ENDPOINT, headers=HEADERS, data=json.dumps(payload))
     return response.json()["choices"][0]["message"]["content"].strip() if response.status_code == 200 else ""
 

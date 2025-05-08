@@ -4,7 +4,7 @@ import requests
 import json
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-AZURE_API_ENDPOINT = os.getenv("AZURE_API_ENDPOINT") 
+AZURE_API_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT") 
 
 HEADERS = {
     "Content-Type": "application/json",

@@ -19,9 +19,6 @@ def get_diff(base_branch, head_branch):
             ["git", "diff", f"origin/{base_branch}...origin/{head_branch}", "--name-status", "--no-color"]
         ).decode("utf-8")
 
-        #Debugging output
-        print("*** Diff : ", diff)
-
         return diff.strip()
     except subprocess.CalledProcessError as e:
         print("Error fetching diff:", e)
@@ -62,7 +59,7 @@ def generate_description(diff):
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.7,
-        "max_tokens": 700
+        "max_tokens": 750
     }
     print("Headers: ", HEADERS)
     response = requests.post(AZURE_API_ENDPOINT, headers=HEADERS, data=json.dumps(payload))
